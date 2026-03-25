@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>My chie</h1>
+    <p>
+        Ako pa chie?
+    </p> 
+    
+    <div class="heart">❤️</div>
+
+    <div class="button">
+        <button id="yesBtn" onclick="yesAnswer()">Yes!!</button>
+        <button id="noBtn" onmouseover="moveButton()">No!!</button>
+
+    </div>
+
+    </div>
+
+    <script>
+        function yesAnswer() {
+            alert("Yayy,t kita na?");
+            
+
+            
+        }
+
+        function moveButton() {
+            let btn = document.getElementById("noBtn");
+            let x = math.random() * 300;
+            let y = math.random() * 200;
+
+            btn.style.left = x + "px";
+            btn.style.top = y + "px"; 
+        }
+    </script>
+
+</body>
+</html>
